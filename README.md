@@ -67,7 +67,7 @@ triangle_size = 5
 #
 # <Memory layout>
 #
-# [0][1][2]
+# [ ][ ][ ][ ]
 #
 # 0: Descending counter
 # 1: Ascending counter
@@ -104,6 +104,10 @@ with builder.loop()
 
         builder.move(SYMBOL) # Move to cell 2
 
+    builder.move(TEMP)             # Move to cell 3
+    builder.init_with_letter("\n") # Initialize cell 3 with new line character
+    builder.output()               # Print new line character
+
     builder.move(DESCENDING) # Move to cell 0
 
 bf_source = builder.generate() # Get Brainf**k code
@@ -117,6 +121,7 @@ After executing Brainf**k code, you will see following:
 ###
 ####
 #####
+
 ```
 
 Wow! Beatiful!
