@@ -168,12 +168,14 @@ class BFLoop:
     """
     def __init__(self, builder: BFBuilder) -> None:
         self.builder = builder
+        self.first_pos = builder.current
 
     def __enter__(self):
         self.builder.custom("[")
         return self
 
     def __exit__(self, exception_type, exception_value, traceback):
+        self.builder.move(self.first_pos)
         self.builder.custom("]")
 
 class BFBranch:
