@@ -10,16 +10,12 @@ def test_builder_branch():
         builder.init_with_letter("A")
         builder.output()
 
-        builder.move(0)
-
     builder.move(0)
     builder.init_with_zero()
     with builder.branch():
         builder.move(1)
         builder.init_with_letter("B")
         builder.output()
-
-        builder.move(0)
 
     assert builder.interpret() == "A"
 
@@ -63,12 +59,8 @@ def test_builder_triangle():
             builder.init_with_letter("#")
             builder.output()
 
-            builder.move(SYMBOL)
-
         builder.move(TEMP)
         builder.init_with_letter("\n")
         builder.output()
-
-        builder.move(DESCENDING)
 
     assert builder.interpret() == "#\n##\n###\n####\n#####\n"

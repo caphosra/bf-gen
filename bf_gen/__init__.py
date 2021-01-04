@@ -145,7 +145,6 @@ class BFBuilder:
             self.add(-1)
             self.move(tmp)
             self.add(1)
-            self.move(first_pos)
         self.move(tmp)
         with self.loop():
             self.add(-1)
@@ -153,7 +152,6 @@ class BFBuilder:
             self.add(1)
             self.move(dist)
             self.add(1)
-            self.move(tmp)
         self.move(first_pos)
 
     def custom(self, text: str) -> None:

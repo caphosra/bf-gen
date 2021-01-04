@@ -109,13 +109,9 @@ with builder.loop():
         builder.init_with_letter('#') # Initialize cell 3 with "#"
         builder.output()              # Print "#"
 
-        builder.move(SYMBOL) # Move to cell 2
-
     builder.move(TEMP)             # Move to cell 3
     builder.init_with_letter('\n') # Initialize cell 3 with new line character
     builder.output()               # Print new line character
-
-    builder.move(DESCENDING) # Move to cell 0
 
 bf_source = builder.generate() # Get Brainf**k code
 ```
