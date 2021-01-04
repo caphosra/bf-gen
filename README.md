@@ -1,5 +1,6 @@
 # bf-gen (Brainf\*\*k generator)
 
+[![Test](https://github.com/capra314cabra/bf-gen/workflows/Test/badge.svg)](https://github.com/capra314cabra/bf-gen)
 [![PyPI](https://img.shields.io/pypi/v/bf-gen)](https://pypi.org/project/bf-gen/)
 
 <p align="center">
