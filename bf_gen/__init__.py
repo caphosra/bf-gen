@@ -111,7 +111,7 @@ class BFBuilder:
             #
         ```
         """
-        return BFLoop(self)
+        return BFBranch(self)
 
     def init_with_zero(self) -> None:
         """
@@ -176,7 +176,7 @@ class BFLoop:
     def __exit__(self, exception_type, exception_value, traceback):
         self.builder.custom("]")
 
-class BFIf:
+class BFBranch:
     """
     Express a if statement on Brainf**k.
     """
