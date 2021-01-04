@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     keywords="brainfuck generator generate whitespace",
     url="https://github.com/capra314cabra/bf-gen",
+    license="MIT",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
