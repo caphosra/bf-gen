@@ -56,3 +56,18 @@ class BFPreference:
         self.output = "Blub!Blub."
         self.start_loop = "Blub!Blub?"
         self.end_loop = "Blub?Blub!"
+
+    def nyaruko(self):
+        """
+        Have BFBuilder use Nyaruko lang.
+
+        What is Nyaruko lang : https://github.com/masarakki/nyaruko_lang
+        """
+        self.increment = "(」・ω・)」うー!(／・ω・)／にゃー!"
+        self.decrement = "(」・ω・)」うー!!!(／・ω・)／にゃー!!!"
+        self.move_right = "(」・ω・)」うー(／・ω・)／にゃー"
+        self.move_left = "(」・ω・)」うー!!(／・ω・)／にゃー!!"
+        self.input = "cosmic!"
+        self.output = "Let's＼(・ω・)／にゃー"
+        self.start_loop = "CHAOS☆CHAOS!"
+        self.end_loop = "I WANNA CHAOS!"
