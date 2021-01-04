@@ -1,6 +1,29 @@
 from bf_gen import BFBuilder
 
-def test_builder1():
+def test_builder_branch():
+    builder = BFBuilder()
+
+    builder.move(0)
+    builder.init_with_num(1)
+    with builder.branch():
+        builder.move(1)
+        builder.init_with_letter("A")
+        builder.output()
+
+        builder.move(0)
+
+    builder.move(0)
+    builder.init_with_zero()
+    with builder.branch():
+        builder.move(1)
+        builder.init_with_letter("B")
+        builder.output()
+
+        builder.move(0)
+
+    assert builder.interpret() == "A"
+
+def test_builder_hello_world():
     builder = BFBuilder()
 
     for letter in "Hello World":
@@ -9,7 +32,7 @@ def test_builder1():
 
     assert builder.interpret() == "Hello World"
 
-def test_builder2():
+def test_builder_triangle():
     builder = BFBuilder()
     triangle_size = 5
 
