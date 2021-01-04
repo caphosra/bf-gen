@@ -1,3 +1,4 @@
+from bfi import interpret
 from .preference import BFPreference
 
 class BFBuilder:
@@ -28,6 +29,15 @@ class BFBuilder:
             return text
         else:
             return self.__text
+
+    def interpret(self, stdin: str = None, tape_size: int = 30000) -> str:
+        """
+        Execute Brainf**k source.
+
+        This function uses bfi (https://pypi.org/project/bfi/) internally.
+        """
+        ret = interpret(self.__text, input_data=stdin, tape_size=tape_size, buffer_output=True)
+        return ret
 
     def input(self) -> None:
         """
