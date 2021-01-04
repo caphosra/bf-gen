@@ -2,9 +2,9 @@
 
 [![PyPI](https://img.shields.io/pypi/v/bf-gen)](https://pypi.org/project/bf-gen/)
 
-<div style="width: 100px; text-align: center;">
-    <img src="https://raw.githubusercontent.com/capra314cabra/bf-gen/master/img/bf-gen-icon.png" alt="Icon" title="bf-gen icon">
-</div>
+<p align="center">
+    <img width="500px" src="https://raw.githubusercontent.com/capra314cabra/bf-gen/master/img/bf-gen-icon.png" alt="Icon" title="bf-gen icon">
+</p>
 
 With this library, you can get Brainf\*\*k source code by just calling functions.  
 Why don't we write Brainf**k with your brain clear!
