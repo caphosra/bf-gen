@@ -1,4 +1,7 @@
 class BFPreference:
+    """
+    Stores language preference
+    """
     def __init__(self):
         self.increment = "+"
         self.decrement = "-"
@@ -10,6 +13,11 @@ class BFPreference:
         self.end_loop = "]"
 
     def brainf__k(self):
+        """
+        Have BFBuilder use Brainf**k.
+
+        What is Brainf**k : https://esolangs.org/wiki/Brainfuck
+        """
         self.increment = "+"
         self.decrement = "-"
         self.move_right = ">"
@@ -20,6 +28,11 @@ class BFPreference:
         self.end_loop = "]"
 
     def ook(self):
+        """
+        Have BFBuilder use Ook!
+
+        What is Ook! : https://esolangs.org/wiki/Ook!
+        """
         self.increment = "Ook.Ook."
         self.decrement = "Ook!Ook!"
         self.move_right = "Ook.Ook?"

@@ -15,7 +15,7 @@ Why don't we write Brainf**k with your brain clear!
 - Easy to use
 - Readable
 - Various functions
-- Also can be used for Brainf**k-like languages such as Whitespace, Ook!
+- Also can be used for Brainf**k-like languages such as Blub, Ook!
 - Inspired by LLVM IRBuilder
 
 ## Why use this library
