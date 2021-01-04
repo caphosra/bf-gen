@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="bf-gen",
-    version="0.1.0",
+    version="0.1.1",
     author="capra314cabra",
     author_email="capra314cabra@gmail.com",
     description="Supports you to generate Brainf**k code.",
