@@ -1,5 +1,11 @@
 # bf-gen (Brainf\*\*k generator)
 
+[![PyPI](https://img.shields.io/pypi/v/bf-gen)](https://pypi.org/project/bf-gen/)
+
+<div style="width: 100px; text-align: center;">
+    <img src="https://raw.githubusercontent.com/capra314cabra/bf-gen/master/img/bf-gen-icon.png" alt="Icon" title="bf-gen icon">
+</div>
+
 With this library, you can get Brainf\*\*k source code by just calling functions.  
 Why don't we write Brainf**k with your brain clear!
 
@@ -83,7 +89,7 @@ TEMP = 3
 builder.move(DESCENDING)             # Move to cell 0
 builder.init_with_num(triangle_size) # Initialize cell 0 with the size of triangle
 
-with builder.loop()
+with builder.loop():
     builder.add(-1) # Decrement cell 0
 
     builder.move(TEMP)       # Move to cell 3
@@ -95,17 +101,17 @@ with builder.loop()
 
     builder.move(SYMBOL) # Move to cell 2
 
-    with builder.loop()
+    with builder.loop():
         builder.add(-1) # Decrement cell 2
 
         builder.move(TEMP)            # Move to cell 3
-        builder.init_with_letter("#") # Initialize cell 3 with "#"
+        builder.init_with_letter('#') # Initialize cell 3 with "#"
         builder.output()              # Print "#"
 
         builder.move(SYMBOL) # Move to cell 2
 
     builder.move(TEMP)             # Move to cell 3
-    builder.init_with_letter("\n") # Initialize cell 3 with new line character
+    builder.init_with_letter('\n') # Initialize cell 3 with new line character
     builder.output()               # Print new line character
 
     builder.move(DESCENDING) # Move to cell 0
@@ -126,7 +132,14 @@ After executing Brainf**k code, you will see following:
 
 Wow! Beatiful!
 
+## Installation
+
+I recommend you to install from PyPI.
+
+```bash
+$ pip install bf-gen
+```
+
 ## License
 
 This library is released under [MIT License](https://github.com/capra314cabra/bf-gen/blob/master/LICENSE).
-
