@@ -41,3 +41,18 @@ class BFPreference:
         self.output = "Ook!Ook."
         self.start_loop = "Ook!Ook?"
         self.end_loop = "Ook?Ook!"
+
+    def blub(self):
+        """
+        Have BFBuilder use Blub.
+
+        What is Blub : https://esolangs.org/wiki/Blub
+        """
+        self.increment = "Blub.Blub."
+        self.decrement = "Blub!Blub!"
+        self.move_right = "Blub.Blub?"
+        self.move_left = "Blub?Blub."
+        self.input = "Blub.Blub!"
+        self.output = "Blub!Blub."
+        self.start_loop = "Blub!Blub?"
+        self.end_loop = "Blub?Blub!"
